@@ -1,0 +1,54 @@
+#contenedor2{
+    margin-top: 30px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.qr{
+    width: 60%;
+}
+
+.Perfil{
+  width: 8%;
+}
+
+.giro {
+    animation: hourglass-spin 4s infinite;
+  }
+  
+  @keyframes hourglass-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .cambioqr {
+    animation: hourglass-instant-spin 24s infinite steps(2);
+  }
+  
+  @keyframes hourglass-instant-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+}

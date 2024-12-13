@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-toggle aria-label="Warning toggle" color="warning" [checked]="false" (ionChange)="toggleTheme($event)">Modo oscuro:</ion-toggle>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="contenedor">
+    <input type="text" placeholder="Correo" [(ngModel)]="correo" name="correo">
+    <input type="text" placeholder="Nombre" [(ngModel)]="nombre" name="nombre">
+    <input type="password" placeholder="Contraseña" [(ngModel)]="password" name="password">
+    <input type="password" placeholder="Repetir contraseña" [(ngModel)]="repeatPassword" >
+    <ion-button id="boton1" (click)="createUser()">Crear cuenta
+    </ion-button>
+  </div>
+
+
+  <ion-img src="assets/logoduoc.png" class="duoc"></ion-img>
+</ion-content>

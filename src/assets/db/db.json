@@ -1,0 +1,47 @@
+{
+    "database": "usuarios.db",
+    "version": 1,
+    "encrypted": false,
+    "mode": "full",
+    "tables": [
+      {
+        "name": "usuarios",
+        "schema": [
+          {
+            "column": "id",
+            "value": "INTEGER PRIMARY KEY AUTOINCREMENT"
+          },
+          {
+            "column": "correo",
+            "value": "TEXT NOT NULL UNIQUE"
+          },
+          {
+            "column": "nombre",
+            "value": "TEXT NOT NULL"
+          },
+          {
+            "column": "password",
+            "value": "TEXT NOT NULL"
+          }
+        ]
+      },
+      {
+        "name": "asistencias",
+        "schema": [
+          {
+            "column": "id",
+            "value": "INTEGER PRIMARY KEY AUTOINCREMENT"
+          },
+          {
+            "column": "usuario_id",
+            "value": "INTEGER NOT NULL"
+          },
+          {
+            "column": "fecha_hora",
+            "value": "TEXT NOT NULL"
+          }
+        ]
+      }
+    ]
+  }
+  

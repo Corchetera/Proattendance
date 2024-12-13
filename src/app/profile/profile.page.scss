@@ -1,0 +1,77 @@
+#container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  .spin {
+    animation: spin 1s linear;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  #contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    row-gap: 15px;
+    background-color: var(--fondo);
+    ion-icon{
+        font-size: 6rem;
+        color: var(--icono);
+    }
+    input, button{
+      --bordeinp: 1px rgb(0, 0, 0) solid;
+        height: 2.5rem;
+        width: 80%;
+        border: var(--bordeinp);
+        outline: white;
+        border-radius: 1.25rem;
+        text-align: center;
+    }
+    input{
+        color: var(--texto-input);
+        background-color: var(--fondo-input);
+    }
+  }
+  
+  #boton1{
+    --ion-color-primary: #cdc528;
+    --background: var(--ion-color-primary);
+    --color: #343434;
+  }
+  .but1{
+    margin-top: 380px;
+  }
+
+  .duoc {
+    margin-top: 10px;
+    width: 50%;
+  }

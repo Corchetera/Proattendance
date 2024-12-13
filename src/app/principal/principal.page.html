@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-item lines="none">
+      <ion-toggle aria-label="Warning toggle" color="warning" [checked]="false" (ionChange)="toggleTheme($event)">Modo oscuro:</ion-toggle>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" fill="clear" (click)="goToProfile()">
+    <ion-img src="assets/Perfil.png" class="Perfil"></ion-img>
+  </ion-button>
+  <div id="contenedor2">
+    <ion-button (click)="sacarCamara()">escanear qr</ion-button>
+    <ion-img src="assets/icons8-hourglass-50.png" class="tiempo giro"></ion-img>
+  </div>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Mi perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h2>Bienvenido, {{ nombreUsuario }}!</h2>
+  <p>Asistencias: {{ asistencias }}</p>
+  <p>Última asistencia</p>
+  <ion-button (click)="CerrarSesion()" class="but1">Cerrar sesión</ion-button>
+  <ion-img src="assets/logoduoc.png" class="duoc"></ion-img>
+</ion-content>
